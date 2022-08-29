@@ -18,8 +18,9 @@
     }
     const watermark = createNodeFromHTML('<div id="kigipux-adblock" owner="kigipux" style="color:white;font-size:11px;position:relative;"><span style="display:inline-flex;align-items:center;position:absolute;right:0;">Youtube Adblock, by <a href="https://kigi.moe/" target="_blank" style="color:white;display:inline-flex;align-items:center;margin-left:5px;"><img alt="KIGIPUX" src="https://kigi.moe/assets/mmc/favicons/favicon-16x16.png"></a></span></div>');
     const createWatermark = function(){
-        var elem = document.getElementById("kigipux-adblock");
-        if (!elem) document.getElementById("ytd-player").appendChild(watermark);
+        var elem = document.getElementById("kigipux-adblock");       
+        var ytd_player = document.getElementById("ytd-player");
+        if ((!elem) && ytd_player) ytd_player.appendChild(watermark);
     }
     setInterval(function(){
         const ad = [...document.querySelectorAll('.ad-showing')][0]; if (ad) {
