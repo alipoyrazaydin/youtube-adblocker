@@ -1,2 +1,2 @@
 # youtube-adblocker
-A Youtube Adblocker for TamperMonkey
+A Youtube Adblocker that works with TamperMonkey.
