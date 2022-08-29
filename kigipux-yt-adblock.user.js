@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Youtube Adblocker
-// @namespace    http://tampermonkey.net/
+// @namespace    https://kigi.moe/
 // @version      1
 // @description  Basic and small Youtube AdBlocker
 // @author       kigipux
@@ -28,6 +28,6 @@
             const btn = document.querySelector('.videoAdUiSkipButton,.ytp-ad-skip-button');
             if (btn) {btn.click();}
         }
-    }, 150);
+    }, 100);
     setInterval(createWatermark,1000);
 })();
